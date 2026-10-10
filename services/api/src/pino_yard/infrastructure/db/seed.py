@@ -157,12 +157,11 @@ async def seed_database(session: AsyncSession) -> None:
     # creates an unguessable QR for each table from the Tables & QR page.
     existing_tables = (await session.execute(select(PhysicalTableModel).where(PhysicalTableModel.branch_id == branch.id))).scalars().all()
     if not existing_tables:
-        # Where each table sits on the floor plan (apps/web/public/floor-plan-3d.webp), in percent:
+        # Where each table sits on the floor plan (apps/web/public/floor-plan-wide.webp), in percent:
         # the centre of its top, as projected by the render's camera.
         table_configs = [
-            ("T1", 14.52, 47.83, 0.0), ("T2", 26.43, 42.79, 0.0), ("T3", 38.33, 37.74, 0.0), ("T4", 50.23, 32.69, 0.0),
-            ("T5", 20.25, 59.01, 0.0), ("T6", 32.16, 53.96, 0.0), ("T7", 44.06, 48.91, 0.0), ("T8", 55.97, 43.86, 0.0),
-            ("T9", 25.98, 70.18, 0.0), ("T10", 37.89, 65.13, 0.0), ("T11", 49.79, 60.09, 0.0), ("T12", 61.70, 55.04, 0.0),
+            (f"T{row * 4 + col + 1}", (18.18, 30.99, 43.80, 56.61)[col], (34.59, 48.75, 62.90)[row], 0.0)
+            for row in range(3) for col in range(4)
         ]
         for t_num, x, y, rot in table_configs:
             tbl = PhysicalTableModel(

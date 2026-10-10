@@ -20,6 +20,8 @@ import { StatusPill } from "@/components/ui/StatusPill";
 import { Toast } from "@/components/ui/Toast";
 import { ButtonSpinner, Skeleton } from "@/components/ui/Feedback";
 import { useAutoRetry } from "@/lib/useAutoRetry";
+import { useScrollRow } from "@/lib/useScrollRow";
+import { ScrollRowArrows } from "@/components/ui/ScrollRowArrows";
 import { EASE_OUT, fadeUp, spring, stagger } from "@/lib/motion";
 import { AddedLaterTag, OrderChangeNotice, type OrderAmendment } from "@/components/admin/OrderChanges";
 import { TableGuests } from "@/components/admin/TableGuests";
@@ -244,7 +246,7 @@ const SERVICE_TYPE_LABELS: Record<string, { ar: string; en: string }> = {
 // Table hotspots are sized relative to the map (cqw = 1% of the map's width), so they
 // shrink with it on a phone and grow when zoomed, never covering each other.
 // The halo matches a table with its four chairs as the 3D render draws it (an ellipse on the
-// floor, 82×56 px on the 1024 px wide artwork); the number floats just above the table.
+// floor, about 100×66 px on the 1280 px wide artwork); the number floats just above the table.
 const TABLE_HOTSPOT_WIDTH = "clamp(32px, 8cqw, 120px)";
 const TABLE_HOTSPOT_HEIGHT = "clamp(22px, 5.5cqw, 82px)";
 
@@ -383,6 +385,8 @@ export default function AdminFloorPage() {
   const [viewMode, setViewMode] = useState<"split" | "grid">("split");
   const [zoomLevel, setZoomLevel] = useState<number>(1);
   const [statusFilter, setStatusFilter] = useState<string>("ALL");
+  const filterRowRef = useRef<HTMLDivElement>(null);
+  const filterRow = useScrollRow(filterRowRef);
   const [orderQueueFilter, setOrderQueueFilter] = useState<OrderQueueFilter>("PENDING_APPROVAL");
   const [serviceQueueFilter, setServiceQueueFilter] = useState<ServiceQueueFilter>("OPEN");
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -960,7 +964,9 @@ export default function AdminFloorPage() {
 
         {/* Status Filters & Search Bar */}
         <div className="flex flex-col gap-2.5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="no-scrollbar fade-x -mx-1 flex items-center gap-1.5 overflow-x-auto px-1" role="group" aria-label={t("تصفية الطاولات", "Filter tables")}>
+          <div className="relative min-w-0 flex-1">
+          <ScrollRowArrows edges={filterRow.edges} onStep={filterRow.step} />
+          <div ref={filterRowRef} className="no-scrollbar fade-x -mx-1 flex items-center gap-1.5 overflow-x-auto px-1" role="group" aria-label={t("تصفية الطاولات", "Filter tables")}>
             {statusFilters.map((f) => {
               const active = statusFilter === f.id;
               return (
@@ -976,6 +982,7 @@ export default function AdminFloorPage() {
                 </button>
               );
             })}
+          </div>
           </div>
           <div className="flex flex-wrap items-center gap-2 lg:flex-nowrap">
             <div className="relative min-w-[16rem] flex-1 lg:w-80 lg:flex-none">
@@ -1157,25 +1164,25 @@ export default function AdminFloorPage() {
                     )}
                   </AnimatePresence>
 
-                  {/* Map stage: keeps the artwork's 1024x768 ratio. Zoom changes its real width
+                  {/* Map stage: keeps the artwork's 16:10 ratio. Zoom changes its real width
                     (not a visual scale), so every edge of a zoomed map can be scrolled to. */}
                 <div className={`relative w-full h-full flex overflow-auto ${zoomLevel > 1 ? "" : "no-scrollbar"}`}>
                   <div
                     style={{
                       width: `${zoomLevel * 100}%`,
-                      maxWidth: `${Math.round(1024 * zoomLevel)}px`,
+                      maxWidth: `${Math.round(1280 * zoomLevel)}px`,
                       containerType: "inline-size",
                       transition: "width 0.2s cubic-bezier(0.2, 0, 0, 1), max-width 0.2s cubic-bezier(0.2, 0, 0, 1)",
                     }}
-                    className="@container relative m-auto aspect-[1024/768] shrink-0 rounded-xl overflow-hidden shadow-2xl select-none"
+                    className="@container relative m-auto aspect-[16/10] shrink-0 rounded-xl overflow-hidden shadow-2xl select-none"
                   >
                     {/* The Authentic Architectural Isometric Blueprint Image */}
                     <Image
-                      src="/floor-plan-3d.webp"
+                      src="/floor-plan-wide.webp"
                       alt={t("مخطط صالة مطعم بينو يارد", "Pino Yard restaurant floor plan")}
                       fill
                       priority
-                      sizes="(max-width: 1024px) 100vw, 1024px"
+                      sizes="(max-width: 1280px) 100vw, 1280px"
                       className="object-fill pointer-events-none"
                     />
 
