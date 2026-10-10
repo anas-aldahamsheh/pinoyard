@@ -16,7 +16,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from pino_yard.application.ai.assistant_turn import AssistantTurn, draft_context, forget_stale_pending
 from pino_yard.application.ai.content_state import content_version
 from pino_yard.application.ai.conversation_store import ConversationState, ConversationStore
-from pino_yard.application.ai.model_clients import GeminiAgentChat, OpenAIAgentChat, context_text
+from pino_yard.application.ai.model_clients import agent_chat, context_text
 from pino_yard.application.ai.model_config_service import ModelConfigService, RuntimeModelConfig
 from pino_yard.application.ai.provider_errors import classify_provider_failure
 from pino_yard.application.ai.semantic_retrieval import SemanticRetrievalError
@@ -251,9 +251,7 @@ class AssistantService:
     def _create_chat(cls, history: List[Dict[str, str]], table_number: str,
                      config: RuntimeModelConfig, context: Dict[str, Any], language: Optional[str] = None):
         """A chat with the fixed instructions; the turn's facts are sent with the guest's message."""
-        if config.provider == "openai":
-            return OpenAIAgentChat(config, history, SYSTEM_INSTRUCTION)
-        return GeminiAgentChat(config, history, SYSTEM_INSTRUCTION)
+        return agent_chat(config, history, SYSTEM_INSTRUCTION)
 
     @classmethod
     async def chat(cls, db: AsyncSession, customer_session_id: str, table_session_id: str,

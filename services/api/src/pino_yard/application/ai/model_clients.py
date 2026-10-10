@@ -3,7 +3,7 @@
 The instructions and the tool list never change between turns or guests, and the
 turn's facts (basket, orders...) are sent next to the guest's message instead of
 inside the instructions. So every request starts with the same long prefix, which
-both providers cache: repeated tokens cost a fraction of the price.
+every provider (Gemini, OpenAI, Claude) caches: repeated tokens cost a fraction of the price.
 """
 import asyncio
 import json
@@ -215,3 +215,139 @@ class OpenAIAgentChat:
 
     async def close(self):
         await self._client.aclose()
+
+
+class AnthropicAgentChat:
+    """Claude through Anthropic's Messages API. The tools and the instructions are marked for
+    caching, and so is the conversation so far, so each tool round re-reads it at the cached price."""
+    URL = "https://api.anthropic.com/v1/messages"
+    API_VERSION = "2023-06-01"
+    # Request fields some models refuse; dropped (and remembered) when Anthropic says so.
+    OPTIONAL_FIELDS = ("temperature", "output_config")
+    # A brief provider hiccup (overloaded, a dropped connection) is retried instead of failing the guest's turn.
+    RETRY_DELAYS = (0.5, 1.5)
+
+    def __init__(self, config: RuntimeModelConfig, history: list[dict], system_instruction: str,
+                 client: Optional[httpx.AsyncClient] = None):
+        self._config = config
+        self.usage = Usage()
+        self._client = client or httpx.AsyncClient(timeout=90.0)
+        self._dropped: set[str] = set()
+        self._system = [{"type": "text", "text": system_instruction, "cache_control": {"type": "ephemeral"}}]
+        self._tools = [{"name": tool["name"], "description": tool["description"], "input_schema": tool["parameters"]}
+                       for tool in TOOL_DEFINITIONS]
+        self._messages: list[dict[str, Any]] = []
+        for msg in history:
+            text = (msg.get("content") or "").strip()
+            # The conversation opens with the guest: an earlier greeting from the assistant is left out.
+            if text and (self._messages or msg["role"] == "user"):
+                self._add("assistant" if msg["role"] == "assistant" else "user", [{"type": "text", "text": text}])
+
+    def _add(self, role: str, blocks: list[dict[str, Any]]) -> None:
+        """Turns alternate between the guest and Claude: blocks of the same side join one turn."""
+        if self._messages and self._messages[-1]["role"] == role:
+            self._messages[-1] = {"role": role, "content": [*self._messages[-1]["content"], *blocks]}
+        else:
+            self._messages.append({"role": role, "content": blocks})
+
+    def _payload(self) -> dict[str, Any]:
+        messages = list(self._messages)
+        if messages:
+            # The cache mark goes on the newest block (a copy: the stored conversation stays unmarked).
+            last = messages[-1]
+            messages[-1] = {**last, "content": [*last["content"][:-1],
+                                                {**last["content"][-1], "cache_control": {"type": "ephemeral"}}]}
+        payload: dict[str, Any] = {
+            "model": self._config.model_id,
+            "max_tokens": MAX_OUTPUT_TOKENS,
+            "system": self._system,
+            "tools": self._tools,
+            "messages": messages,
+            "temperature": 0.2,
+        }
+        if self._config.reasoning_effort:
+            # How hard Claude thinks before answering (the admin's thinking level).
+            payload["output_config"] = {"effort": self._config.reasoning_effort}
+        for name in self._dropped:
+            payload.pop(name, None)
+        return payload
+
+    @staticmethod
+    def _transient(response: httpx.Response) -> bool:
+        return response.status_code in (429, 500, 502, 503, 504, 529)
+
+    async def _post(self) -> dict[str, Any]:
+        headers = {"x-api-key": self._config.api_key, "anthropic-version": self.API_VERSION}
+        retries = 0
+        for _ in range(len(self.OPTIONAL_FIELDS) + len(self.RETRY_DELAYS) + 1):
+            try:
+                response = await self._client.post(self.URL, json=self._payload(), headers=headers)
+            except (httpx.ConnectError, httpx.RemoteProtocolError):
+                if retries >= len(self.RETRY_DELAYS):
+                    raise
+                await asyncio.sleep(self.RETRY_DELAYS[retries])
+                retries += 1
+                continue
+            if self._transient(response) and retries < len(self.RETRY_DELAYS):
+                logger.warning("Anthropic answered %s; retrying", response.status_code)
+                await asyncio.sleep(self.RETRY_DELAYS[retries])
+                retries += 1
+                continue
+            if response.status_code == 400:
+                try:
+                    message = (response.json().get("error") or {}).get("message") or ""
+                except ValueError:
+                    message = ""
+                refused = next((name for name in self.OPTIONAL_FIELDS if name not in self._dropped
+                                and (name in message or (name == "output_config" and "effort" in message))), None)
+                if refused:
+                    logger.info("Anthropic model %s does not accept %s; continuing without it",
+                                self._config.model_id, refused)
+                    self._dropped.add(refused)
+                    continue
+            response.raise_for_status()
+            return response.json()
+        response.raise_for_status()
+        return response.json()
+
+    async def send_message(self, message: str | list[dict], context: Optional[dict] = None):
+        if isinstance(message, str):
+            # The turn's facts go first, in their own block, ahead of the guest's words.
+            blocks = [{"type": "text", "text": context_text(context)}] if context else []
+            self._add("user", [*blocks, {"type": "text", "text": message}])
+        else:
+            self._add("user", [{"type": "tool_result", "tool_use_id": item["call_id"],
+                                "content": json.dumps(item["response"], ensure_ascii=False, separators=(",", ":"))}
+                               for item in message])
+        return await self._exchange()
+
+    async def send_note(self, note: str):
+        """A note from the server (not the guest), e.g. asking to fix the last reply."""
+        self._add("user", [{"type": "text", "text": note}])
+        return await self._exchange()
+
+    async def _exchange(self):
+        data = await self._post()
+        usage = data.get("usage") or {}
+        cached = usage.get("cache_read_input_tokens") or 0
+        self.usage.add(input_tokens=(usage.get("input_tokens") or 0) + cached
+                       + (usage.get("cache_creation_input_tokens") or 0),
+                       cached_input_tokens=cached, output_tokens=usage.get("output_tokens") or 0)
+        # Claude's turn goes back as it came (an empty text block is refused when sent back).
+        content = [block for block in data.get("content") or []
+                   if block.get("type") and not (block["type"] == "text" and not block.get("text"))]
+        if content:
+            self._add("assistant", content)
+        calls = [SimpleNamespace(name=block["name"], args=block.get("input") or {}, call_id=block["id"])
+                 for block in content if block["type"] == "tool_use"]
+        text = "".join(block["text"] for block in content if block["type"] == "text")
+        return SimpleNamespace(function_calls=calls, text=text)
+
+    async def close(self):
+        await self._client.aclose()
+
+
+def agent_chat(config: RuntimeModelConfig, history: list[dict], system_instruction: str):
+    """The chat client for the provider a section uses."""
+    chat_class = {"openai": OpenAIAgentChat, "anthropic": AnthropicAgentChat}.get(config.provider, GeminiAgentChat)
+    return chat_class(config, history, system_instruction)
