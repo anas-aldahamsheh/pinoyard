@@ -69,8 +69,8 @@ export function FloorBodySkeleton() {
         ))}
       </div>
       <div className="flex min-h-0 flex-1 flex-col gap-4 xl:flex-row" aria-hidden="true">
-        <div className="relative flex min-h-[340px] flex-1 items-center justify-center overflow-hidden rounded-[1.75rem] border border-line bg-[#10141c] shadow-lift sm:min-h-[640px] xl:min-h-[700px]">
-          <span className="size-12 animate-pulse rounded-full bg-white/10" />
+        <div className="relative flex min-h-[340px] flex-1 items-center justify-center overflow-hidden rounded-[1.75rem] border border-line bg-[#e8e6e1] shadow-lift dark:bg-[#10141c] sm:min-h-[640px] xl:min-h-[700px]">
+          <span className="size-12 animate-pulse rounded-full bg-black/5 dark:bg-white/10" />
         </div>
         <div className="flex w-full flex-col gap-4 lg:grid lg:grid-cols-2 xl:flex xl:w-[420px]">
           {[0, 1].map((panel) => (

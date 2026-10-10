@@ -6,7 +6,7 @@ from types import SimpleNamespace
 import httpx
 import pytest
 
-from pino_yard.application.ai.model_clients import AnthropicAgentChat, agent_chat
+from pino_yard.application.ai.model_clients import AnthropicAgentChat, agent_chat, close_shared_http_client
 from pino_yard.application.ai.model_config_service import ModelConfigService, RuntimeModelConfig
 from pino_yard.application.ai.provider_errors import classify_provider_failure
 from pino_yard.infrastructure.db.seed import seed_database
@@ -20,6 +20,11 @@ CLAUDE_THINKING_HARD = RuntimeModelConfig("anthropic", "claude-haiku-5-5", "test
 def claude_chat(responder, history=()):
     return AnthropicAgentChat(CLAUDE, list(history), "system instructions",
                               client=httpx.AsyncClient(transport=httpx.MockTransport(responder)))
+
+
+def sse(*events):
+    body = "".join(f"event: {event['type']}\ndata: {json.dumps(event, ensure_ascii=False)}\n\n" for event in events)
+    return httpx.Response(200, headers={"content-type": "text/event-stream"}, content=body.encode())
 
 
 @pytest.mark.asyncio
@@ -90,7 +95,7 @@ async def test_a_claude_tool_round_keeps_the_conversation_and_caches_it():
                 "stop_reason": "tool_use",
                 "usage": {"input_tokens": 50, "cache_creation_input_tokens": 3000, "output_tokens": 20}})
         return httpx.Response(200, json={
-            "content": [{"type": "text", "text": "عنا حمص بـ 2 دينار."}], "stop_reason": "end_turn",
+            "content": [{"type": "text", "text": "عنا حمص بـ 2.90 دينار."}], "stop_reason": "end_turn",
             "usage": {"input_tokens": 40, "cache_read_input_tokens": 3050, "output_tokens": 10}})
 
     history = [{"role": "assistant", "content": "أهلاً! كيف بقدر أساعدك؟"},
@@ -102,7 +107,7 @@ async def test_a_claude_tool_round_keeps_the_conversation_and_caches_it():
             ("search_knowledge", {"query": "حمص"}, "toolu_1")]
         final = await chat.send_message([{"name": "search_knowledge", "call_id": "toolu_1",
                                           "response": {"matches": ["حمص"]}}])
-        assert final.text == "عنا حمص بـ 2 دينار." and final.function_calls == []
+        assert final.text == "عنا حمص بـ 2.90 دينار." and final.function_calls == []
     finally:
         await chat.close()
 
@@ -134,14 +139,27 @@ async def test_a_claude_tool_round_keeps_the_conversation_and_caches_it():
 
 
 @pytest.mark.asyncio
-async def test_a_busy_moment_at_anthropic_is_retried(monkeypatch):
+async def test_claude_text_is_passed_on_while_it_is_written_and_a_busy_moment_is_retried(monkeypatch):
     monkeypatch.setattr(AnthropicAgentChat, "RETRY_DELAYS", (0, 0))
     answers = iter([
         httpx.Response(529, json={"type": "error", "error": {"type": "overloaded_error", "message": "Overloaded"}}),
-        httpx.Response(200, json={
-            "content": [{"type": "text", "text": "بضيف البيتزا."},
-                        {"type": "tool_use", "id": "toolu_2", "name": "update_draft_order", "input": {"op": "add"}}],
-            "stop_reason": "tool_use", "usage": {"input_tokens": 10, "output_tokens": 15}}),
+        sse({"type": "message_start", "message": {"usage": {"input_tokens": 10, "output_tokens": 1}}},
+            {"type": "content_block_start", "index": 0, "content_block": {"type": "text", "text": ""}},
+            {"type": "content_block_delta", "index": 0, "delta": {"type": "text_delta", "text": "بس "}},
+            {"type": "error", "error": {"type": "overloaded_error", "message": "Overloaded"}}),
+        sse({"type": "message_start", "message": {"usage": {"input_tokens": 10, "output_tokens": 1}}},
+            {"type": "content_block_start", "index": 0, "content_block": {"type": "text", "text": ""}},
+            {"type": "content_block_delta", "index": 0, "delta": {"type": "text_delta", "text": "بضيف "}},
+            {"type": "content_block_delta", "index": 0, "delta": {"type": "text_delta", "text": "الحمص."}},
+            {"type": "content_block_stop", "index": 0},
+            {"type": "content_block_start", "index": 1,
+             "content_block": {"type": "tool_use", "id": "toolu_2", "name": "update_basket", "input": {}}},
+            {"type": "content_block_delta", "index": 1, "delta": {"type": "input_json_delta", "partial_json": "{\"op"}},
+            {"type": "content_block_delta", "index": 1,
+             "delta": {"type": "input_json_delta", "partial_json": "\": \"add\"}"}},
+            {"type": "content_block_stop", "index": 1},
+            {"type": "message_delta", "delta": {"stop_reason": "tool_use"}, "usage": {"output_tokens": 15}},
+            {"type": "message_stop"}),
     ])
     sent = []
 
@@ -150,15 +168,27 @@ async def test_a_busy_moment_at_anthropic_is_retried(monkeypatch):
         return next(answers)
 
     chat = claude_chat(responder)
+    pieces = []
     try:
-        reply = await chat.send_message("ضيف بيتزا")
+        reply = await chat.send_message("ضيف حمص", on_text=pieces.append)
     finally:
         await chat.close()
-    assert len(sent) == 2
-    assert reply.text == "بضيف البيتزا."
+    assert all(payload["stream"] is True for payload in sent) and len(sent) == 3
+    # The interrupted attempt's words are taken back (None) before the reply is written again.
+    assert pieces == [None, "بس ", None, "بضيف ", "الحمص."]
+    assert reply.text == "بضيف الحمص."
     assert [(call.name, call.args, call.call_id) for call in reply.function_calls] == [
-        ("update_draft_order", {"op": "add"}, "toolu_2")]
+        ("update_basket", {"op": "add"}, "toolu_2")]
     assert chat.usage.output_tokens == 15
+
+
+@pytest.mark.asyncio
+async def test_claude_shares_the_pool_of_open_connections():
+    first, second = AnthropicAgentChat(CLAUDE, [], "instructions"), AnthropicAgentChat(CLAUDE, [], "instructions")
+    try:
+        assert first._client is second._client
+    finally:
+        await close_shared_http_client()
 
 
 def test_claude_failures_read_like_the_others():

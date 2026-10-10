@@ -74,9 +74,12 @@ Pino Yard is a full-stack table-ordering platform built for **Pino Yard Restaura
 ---
 
 <div align="center">
-<img src="apps/web/public/floor-plan-3d.webp" alt="Restaurant floor plan used by the live admin floor map" width="640" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="apps/web/public/floor-plan-wide-dark.webp" />
+  <img src="apps/web/public/floor-plan-wide-light.webp" alt="3D floor plan of the Pino Yard dining hall used by the live admin floor map" width="720" />
+</picture>
 <br/>
-<sub>The restaurant floor plan behind the live admin floor map</sub>
+<sub>The 3D render of the dining hall behind the live admin floor map (a day and a night version)</sub>
 </div>
 
 ---

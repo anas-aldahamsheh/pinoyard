@@ -15,6 +15,7 @@ import { ProductVisual } from "@/components/customer/ProductVisual";
 import { AskAssistantButton } from "@/components/customer/AskAssistantButton";
 import { Sheet, SheetBody, SheetFooter, SheetHeader } from "@/components/ui/Sheet";
 import { QuantityStepper } from "@/components/ui/QuantityStepper";
+import { SegmentedControl } from "@/components/ui/SegmentedControl";
 import { ButtonSpinner, EmptyState, LoadError, Reveal, SlowNote } from "@/components/ui/Feedback";
 import { StatusPill } from "@/components/ui/StatusPill";
 import { Toast } from "@/components/ui/Toast";
@@ -24,6 +25,7 @@ import { ScrollRowArrows } from "@/components/ui/ScrollRowArrows";
 import { useAutoRetry } from "@/lib/useAutoRetry";
 import { formatFils } from "@/lib/price";
 import { otherLanguage } from "@/lib/otherLanguage";
+import { dishUnits, type DishUnits } from "@/lib/units";
 import { EASE_OUT, spring } from "@/lib/motion";
 
 interface Category {
@@ -32,7 +34,7 @@ interface Category {
   name_en: string;
 }
 
-interface Product {
+interface Product extends DishUnits {
   id: string;
   category_id: string;
   name_ar: string;
@@ -111,6 +113,8 @@ export default function MenuPage() {
   const [imageDirection, setImageDirection] = useState(1);
   const [note, setNote] = useState("");
   const [quantity, setQuantity] = useState(1);
+  // How the dish is served, for a dish that comes more than one way (a plate or a box).
+  const [unit, setUnit] = useState("");
   const [adding, setAdding] = useState(false);
   const [actionMessage, setActionMessage] = useState<string | null>(null);
   const [hasVisit, setHasVisit] = useState(false);
@@ -170,6 +174,7 @@ export default function MenuPage() {
     setSelectedProduct(product);
     setSelectedImageIndex(0);
     setQuantity(1);
+    setUnit(product.units?.[0] ?? "");
     setNote("");
   };
 
@@ -183,6 +188,7 @@ export default function MenuPage() {
         body: JSON.stringify({
           product_id: selectedProduct.id,
           quantity,
+          unit: unit || null,
           note: note.trim() || null,
         }),
       });
@@ -231,6 +237,10 @@ export default function MenuPage() {
     })),
   ];
 
+  // The ways the open dish is served, and the one counted in the quantity.
+  const servingOptions = selectedProduct ? dishUnits(selectedProduct, lang) : [];
+  const servedAs = servingOptions.find((option) => option.value === unit)?.label;
+
   const galleryImages = selectedProduct
     ? (selectedProduct.images?.length
       ? selectedProduct.images
@@ -259,10 +269,11 @@ export default function MenuPage() {
       <div className={`mx-auto grid w-full max-w-[1600px] gap-8 px-4 sm:px-6 lg:px-8 ${hasVisit ? "xl:grid-cols-[minmax(0,1fr)_22.5rem] 2xl:grid-cols-[13.5rem_minmax(0,1fr)_22.5rem]" : "2xl:grid-cols-[13.5rem_minmax(0,1fr)]"}`}>
         {/* Sections rail (wide screens) */}
         <aside className="hidden 2xl:block" aria-label={t("تصنيفات القائمة", "Menu categories")}>
-          <motion.nav layoutRoot layoutScroll className="sticky top-24 -me-2 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain pe-2">
+          {/* Never taller than the screen: a long list of sections scrolls inside the rail. */}
+          <motion.nav layoutRoot className="sticky top-24 flex max-h-[calc(100dvh-7rem)] flex-col">
             <p className="mb-3 px-3 text-xs font-bold tracking-wide text-subtle">{t("الأقسام", "Sections")}</p>
             {firstLoad && <CategoryChipsSkeleton rail />}
-            <ul className={`space-y-1 ${firstLoad || failed ? "hidden" : ""}`}>
+            <motion.ul layoutScroll className={`min-h-0 flex-1 space-y-1 overflow-y-auto pb-2 ${firstLoad || failed ? "hidden" : ""}`}>
               {categoryTabs.map((tab) => {
                 const active = selectedCategory === tab.id;
                 return (
@@ -284,7 +295,7 @@ export default function MenuPage() {
                   </li>
                 );
               })}
-            </ul>
+            </motion.ul>
           </motion.nav>
         </aside>
 
@@ -532,8 +543,19 @@ export default function MenuPage() {
                       </p>
                     )}
 
+                    {servingOptions.length > 1 && (
+                      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-line bg-surface-2 p-3 ps-4">
+                        <span className="font-semibold text-ink">{t("طريقة التقديم", "Serving")}</span>
+                        <SegmentedControl value={unit} onChange={setUnit} segments={servingOptions}
+                          ariaLabel={t("طريقة التقديم", "Serving")} />
+                      </div>
+                    )}
+
                     <div className="flex items-center justify-between gap-4 rounded-2xl border border-line bg-surface-2 p-3 ps-4">
-                      <span id="product-quantity-label" className="font-semibold text-ink">{t("الكمية", "Quantity")}</span>
+                      <span id="product-quantity-label" className="font-semibold text-ink">
+                        {t("الكمية", "Quantity")}
+                        {servedAs && <span className="ms-1.5 text-sm font-normal text-subtle">({servedAs})</span>}
+                      </span>
                       <QuantityStepper
                         value={quantity}
                         onDecrement={() => setQuantity((q) => Math.max(1, q - 1))}

@@ -9,7 +9,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "gallayet-bandoura.jpg"
+    "photo": "gallayet-bandoura.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "حلوم مشوي",
@@ -17,7 +20,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "grilled-halloumi.jpg"
+    "photo": "grilled-halloumi.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "حمص",
@@ -25,7 +31,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "hummus.jpg"
+    "photo": "hummus.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فلافل",
@@ -33,7 +42,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "falafel.jpg"
+    "photo": "falafel.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "رول فلافل",
@@ -41,7 +53,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "falafel-roll.jpg"
+    "photo": "falafel-roll.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "بطاطا حارة",
@@ -49,7 +64,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "batata-harra.jpg"
+    "photo": "batata-harra.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "مفركة",
@@ -57,7 +75,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "mfarkeh.jpg"
+    "photo": "mfarkeh.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "بيض بالجبنة",
@@ -65,7 +86,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "eggs-with-cheese.jpg"
+    "photo": "eggs-with-cheese.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فول بيروتي",
@@ -73,7 +97,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "foul-bayrouti.jpg"
+    "photo": "foul-bayrouti.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فول",
@@ -81,7 +108,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "foul.jpg"
+    "photo": "foul.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "لبنة طرية",
@@ -89,7 +119,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "labneh-taryeh.jpg"
+    "photo": "labneh-taryeh.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "كرات فيتا",
@@ -97,7 +130,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "feta-balls.jpg"
+    "photo": "feta-balls.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "بيض عيون",
@@ -105,7 +141,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "sunny-side-up.jpg"
+    "photo": "sunny-side-up.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "عرض الفطور العربي",
@@ -113,7 +152,10 @@
     "description_ar": "قلاية، حمص، فلافل، حلوم مشوي، فول، بيض بالجبنة، زيت وزعتر، دبس وطحينة، إبريق شاي، وأرجيلتين أو حلوتين.",
     "description_en": "Gallayeh, hummus, falafel, grilled halloumi, foul, eggs with cheese, oil & zaatar, debs & tahini, tea pot, and two shishas or two sweets.",
     "price": "16.00",
-    "photo": "arabic-breakfast-offer.jpg"
+    "photo": "arabic-breakfast-offer.jpg",
+    "units": [
+     "وجبة"
+    ]
    }
   ]
  },
@@ -127,7 +169,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "8.00",
-    "photo": "western-breakfast-offer.jpg"
+    "photo": "western-breakfast-offer.jpg",
+    "units": [
+     "وجبة"
+    ]
    },
    {
     "name_ar": "أومليت بالجبنة",
@@ -135,7 +180,10 @@
     "description_ar": "بيض، أجبان مشكّلة، هاش براون، توست، شرائح بندورة وخيار.",
     "description_en": "Eggs, mixed cheese, hash brown, toast, tomato and cucumber slices.",
     "price": "3.50",
-    "photo": "cheese-omelette.jpg"
+    "photo": "cheese-omelette.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "أومليت إسباني",
@@ -143,7 +191,10 @@
     "description_ar": "بيض، فلفل مشكّل، أجبان مشكّلة، بصل، فطر، زيتون أسود، هاش براون، خبز محمّص، شرائح بندورة وخيار.",
     "description_en": "Eggs, mixed peppers, mixed cheese, onions, mushrooms, black olives, hash brown, toasted bread, sliced tomatoes and cucumbers.",
     "price": "3.50",
-    "photo": "spanish-omelette.jpg"
+    "photo": "spanish-omelette.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "أومليت مكسيكي",
@@ -151,7 +202,10 @@
     "description_ar": "بيض، فلفل مشكّل، أجبان مشكّلة، فلفل حار، بصل، هاش براون، صلصة مكسيكية، خبز محمّص، شرائح بندورة وخيار.",
     "description_en": "Eggs, mixed peppers, mixed cheese, hot peppers, onions, hash browns, Mexican salsa, toasted bread, sliced tomatoes and cucumbers.",
     "price": "3.50",
-    "photo": "mexican-omelette.jpg"
+    "photo": "mexican-omelette.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "أومليت يوناني",
@@ -159,7 +213,10 @@
     "description_ar": "بيض، فلفل مشكّل، بصل، جبنة فيتا، هاش براون، خبز محمّص، شرائح بندورة وخيار.",
     "description_en": "Eggs, mixed peppers, onions, feta cheese, hash brown, toasted bread, tomato and cucumber slices.",
     "price": "3.50",
-    "photo": "greek-omelette.jpg"
+    "photo": "greek-omelette.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "توست البيض بالأفوكادو",
@@ -167,7 +224,10 @@
     "description_ar": "بيض مخفوق بالزبدة، خبز لوف محمّص وشرائح أفوكادو.",
     "description_en": "Scrambled eggs with butter, toasted loaf and avocado slices.",
     "price": "4.50",
-    "photo": "avocado-and-egg-toast.jpg"
+    "photo": "avocado-and-egg-toast.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "كرواسون تركي",
@@ -175,7 +235,10 @@
     "description_ar": "كرواسون هش بالزبدة محشو بشرائح صدر ديك رومي طرية، جبنة سائلة، خس طازج وبندورة. ديك رومي، جبنة كريمية، شرائح بندورة، زيتون أسود، خس لولو ومايونيز.",
     "description_en": "Buttery, flaky croissant filled with tender slices of turkey breast, melted cheese, fresh lettuce and tomatoes. Turkey, cream cheese, tomato slices, black olives, lollo lettuce and mayonnaise.",
     "price": "3.90",
-    "photo": "turkey-croissant.jpg"
+    "photo": "turkey-croissant.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "كرواسون حلوم",
@@ -183,7 +246,10 @@
     "description_ar": "كرواسون، حلوم مشوي (4 قطع)، جرجير، بندورة مجففة، صوص بينو، كاتشب، بيستو، شرائح بندورة وخيار.",
     "description_en": "Croissant, grilled halloumi (4 pieces), arugula, sundried tomatoes, Pino sauce, ketchup, pesto, tomato and cucumber slices.",
     "price": "4.50",
-    "photo": "halloumi-croissant.jpg"
+    "photo": "halloumi-croissant.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "توست لبنة",
@@ -191,7 +257,10 @@
     "description_ar": "خبز لوف محمّص، لبنة، جوز وثوم حار.",
     "description_en": "Toasted loaf bread, labneh, walnuts and hot garlic.",
     "price": "3.90",
-    "photo": "labneh-toast.jpg"
+    "photo": "labneh-toast.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فرنش توست",
@@ -199,7 +268,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "french-toast.jpg"
+    "photo": "french-toast.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "بان كيك",
@@ -207,7 +279,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "pancake.jpg"
+    "photo": "pancake.jpg",
+    "units": [
+     "صحن"
+    ]
    }
   ]
  },
@@ -221,7 +296,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "pino-manousheh.jpg"
+    "photo": "pino-manousheh.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "منقوشة تركي وجبنة",
@@ -229,7 +307,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "turkey-and-cheese.jpg"
+    "photo": "turkey-and-cheese.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "منقوشة حلوم",
@@ -237,7 +318,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "halloumi-manousheh.jpg"
+    "photo": "halloumi-manousheh.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "منقوشة جبنة مشكّلة",
@@ -245,7 +329,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "mix-cheese.jpg"
+    "photo": "mix-cheese.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "منقوشة زعتر وجبنة",
@@ -253,7 +340,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "zaatar-and-cheese.jpg"
+    "photo": "zaatar-and-cheese.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "منقوشة زعتر",
@@ -261,7 +351,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "zaatar-manousheh.jpg"
+    "photo": "zaatar-manousheh.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "منقوشة فلافل",
@@ -269,7 +362,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "falafel-manousheh.jpg"
+    "photo": "falafel-manousheh.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "منقوشة فيتا",
@@ -277,7 +373,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "feta-manousheh.jpg"
+    "photo": "feta-manousheh.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "منقوشة لبنة",
@@ -285,7 +384,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "labneh-manousheh.jpg"
+    "photo": "labneh-manousheh.jpg",
+    "units": [
+     "حبة"
+    ]
    }
   ]
  },
@@ -299,7 +401,10 @@
     "description_ar": "قطع ماك آند تشيز (3 قطع)، تشيكن تندرز (4 قطع)، أصابع موزاريلا (4 قطع)، كرات دجاج (4 قطع)، شرمب داينمايت (4 قطع)، حلقات بصل (4 قطع) وكيرلي فرايز، مع صوصات جانبية: كوكتيل صوص وسويت تشيلي صوص.",
     "description_en": "Mac and cheese bites (3 pieces), chicken tenders (4 pieces), mozzarella sticks (4 pieces), chicken balls (4 pieces), dynamite shrimp (4 pieces), onion rings (4 pieces) and curly fries, with side dips: cocktail sauce and sweet chili sauce.",
     "price": "16.90",
-    "photo": "pino-platter.jpg"
+    "photo": "pino-platter.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "كرات الماك الذهبية",
@@ -307,7 +412,10 @@
     "description_ar": "باستا، صوص جبنة، عجينة كنافة وسويت تشيلي صوص.",
     "description_en": "Pasta, cheese sauce, kunafa dough and sweet chili sauce.",
     "price": "4.90",
-    "photo": "golden-mac-balls.jpg"
+    "photo": "golden-mac-balls.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "قطع رويال المقرمشة",
@@ -315,7 +423,10 @@
     "description_ar": "قطع دجاج مقرمشة مع جبنة شيدر، فستق حلبي مطحون وكوكتيل صوص.",
     "description_en": "Crispy chicken bites with cheddar cheese, ground pistachio and cocktail sauce.",
     "price": "5.50",
-    "photo": "crispy-royal-bites.jpg"
+    "photo": "crispy-royal-bites.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "شرمب داينمايت",
@@ -323,7 +434,10 @@
     "description_ar": "شرمب (6 قطع)، صوص داينمايت، ثوم معمّر ناعم، سمسم وحبة البركة.",
     "description_en": "Shrimp (6 pieces), dynamite sauce, fine chives, sesame seeds and nigella seeds.",
     "price": "6.50",
-    "photo": "dynamite-shrimps.jpg"
+    "photo": "dynamite-shrimps.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "شرمب أفوكادو",
@@ -331,7 +445,10 @@
     "description_ar": "شرمب (6 قطع)، كزبرة، ريحان، جواكامولي، بهارات مكسيكية وصوص تشيلي.",
     "description_en": "Shrimp (6 pieces), coriander, basil, guacamole, Mexican seasoning and chili sauce.",
     "price": "6.50",
-    "photo": "avocado-shrimps.jpg"
+    "photo": "avocado-shrimps.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "تشيكن تندرز",
@@ -339,7 +456,10 @@
     "description_ar": "تشيكن تندرز (4 قطع). اختر صوص واحد: هني ماسترد، بافلو، باربكيو أو سويت تشيلي صوص.",
     "description_en": "Chicken tenders (4 pieces). Choose one sauce: honey mustard, buffalo, barbecue or sweet chili sauce.",
     "price": "4.90",
-    "photo": "chicken-tenders.jpg"
+    "photo": "chicken-tenders.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "ناتشوز",
@@ -347,7 +467,10 @@
     "description_ar": "فاصولياء حمراء، ذرة، زيتون أسود، هالبينو، جبنة سائلة، بصل أخضر، ساور كريم، جواكامولي وبهارات مكسيكية.",
     "description_en": "Red beans, corn, black olives, jalapeños, melted cheese, green onions, sour cream, guacamole and Mexican seasoning.",
     "price": "5.90",
-    "photo": "nachos.jpg"
+    "photo": "nachos.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "أصابع موزاريلا",
@@ -355,7 +478,10 @@
     "description_ar": "أصابع موزاريلا (4 قطع)، تقدّم مع صوص مارينارا.",
     "description_en": "Mozzarella sticks (4 pieces), served with marinara sauce.",
     "price": "4.90",
-    "photo": "mozzarella-sticks.jpg"
+    "photo": "mozzarella-sticks.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سبانش ديب",
@@ -363,7 +489,10 @@
     "description_ar": "خلطة سبانش ديب وشيبس تورتيلا.",
     "description_en": "Spinach dip mix and tortilla chips.",
     "price": "5.90",
-    "photo": "spinach-dip.jpg"
+    "photo": "spinach-dip.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "شيبس آند ديب",
@@ -371,7 +500,10 @@
     "description_ar": "شيبس تورتيلا، صلصة مكسيكية، ساور كريم وصوص أفوكادو.",
     "description_en": "Tortilla chips, Mexican salsa, sour cream and avocado sauce.",
     "price": "4.50",
-    "photo": "chips-and-dip.jpg"
+    "photo": "chips-and-dip.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "بطاطا مقلية",
@@ -379,7 +511,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.25",
-    "photo": "french-fries.jpg"
+    "photo": "french-fries.jpg",
+    "units": [
+     "صحن"
+    ]
    }
   ]
  },
@@ -393,7 +528,10 @@
     "description_ar": "رمان، خس لولو بيوندا، جوز، بزر دوار الشمس، فطر، شمندر، مانجا، فاصولياء سوداء، جبنة مجدولة، صوص مستكة وصنوبر.",
     "description_en": "Pomegranate, lollo bionda lettuce, walnuts, sunflower seeds, mushrooms, beetroot, mango, black beans, mjadalah cheese, mastic dressing and pine nuts.",
     "price": "5.90",
-    "photo": "pino-salad.jpg"
+    "photo": "pino-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلطة سيزر",
@@ -401,7 +539,10 @@
     "description_ar": "خس آيسبيرغ، صوص سيزر، بارميزان وكروتون.",
     "description_en": "Iceberg lettuce, Caesar dressing, Parmesan and croutons.",
     "price": "5.50",
-    "photo": "caesar-salad.jpg"
+    "photo": "caesar-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلطة التاكو",
@@ -409,7 +550,10 @@
     "description_ar": "شيبس تورتيلا، خس آيسبيرغ، جبنة شيدر، بندورة شيري، هالبينو، فاصولياء حمراء، صوص رانش، ساور كريم، أفوكادو وبهارات مكسيكية.",
     "description_en": "Tortilla chips, iceberg lettuce, cheddar cheese, cherry tomatoes, jalapeños, red beans, ranch dressing, sour cream, avocado and Mexican seasoning.",
     "price": "5.50",
-    "photo": "taco-salad.jpg"
+    "photo": "taco-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلطة الكينوا",
@@ -417,7 +561,10 @@
     "description_ar": "كينوا ملونة، أفوكادو، خس آيسبيرغ، تفاح أخضر، جوز، ورق مشكّل، صوص مانجا وليمون، رمان، فيليه برتقال وفراولة.",
     "description_en": "Tricolor quinoa, avocado, iceberg lettuce, green apple, walnuts, mixed leaves, mango lemon dressing, pomegranate, orange fillet and strawberry.",
     "price": "5.50",
-    "photo": "quinoa-salad.jpg"
+    "photo": "quinoa-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلطة الكراب",
@@ -425,7 +572,10 @@
     "description_ar": "كراب، خس آيسبيرغ، خيار، جزر، ذرة، صوص داينمايت، صوص مايونيز بالليمون، عجينة تمبورا مقلية وشرائح برتقال.",
     "description_en": "Crab, iceberg lettuce, cucumber, carrot, corn, dynamite sauce, lemon mayo dressing, fried tempura batter and orange slices.",
     "price": "5.50",
-    "photo": "crab-salad.jpg"
+    "photo": "crab-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلطة حلوم",
@@ -433,7 +583,10 @@
     "description_ar": "جرجير، ورق مشكّل، جوز، زيتون أسود، خيار، بندورة شيري، صنوبر، صوص بيستو وحلوم مشوي (4 قطع).",
     "description_en": "Arugula, mixed leaves, walnuts, black olives, cucumber, cherry tomato, pine nuts, pesto dressing and grilled halloumi (4 pieces).",
     "price": "5.50",
-    "photo": "halloumi-salad.jpg"
+    "photo": "halloumi-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلطة الروكا",
@@ -441,7 +594,10 @@
     "description_ar": "جرجير، بندورة شيري، فطر، بارميزان وصوص فينيغريت.",
     "description_en": "Arugula, cherry tomatoes, mushrooms, Parmesan and vinaigrette dressing.",
     "price": "5.50",
-    "photo": "rocca-salad.jpg"
+    "photo": "rocca-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلطة يونانية",
@@ -449,7 +605,10 @@
     "description_ar": "خس آيسبيرغ، بندورة، خيار، فلفل حلو، زيتون أسود، جبنة فيتا، أوريغانو وصوص فينيغريت.",
     "description_en": "Iceberg lettuce, tomato, cucumber, bell peppers, black olives, feta cheese, oregano and vinaigrette dressing.",
     "price": "5.50",
-    "photo": "greek-salad.jpg"
+    "photo": "greek-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلطة البوملي",
@@ -457,7 +616,10 @@
     "description_ar": "بوملي، خس آيسبيرغ، ذرة، فطر، مكعبات حلوم وصوص البوملي.",
     "description_en": "Pomelo, iceberg lettuce, corn, mushrooms, halloumi cubes and pomelo dressing.",
     "price": "5.50",
-    "photo": "seasonal-salad.jpg"
+    "photo": "seasonal-salad.jpg",
+    "units": [
+     "صحن"
+    ]
    }
   ]
  },
@@ -471,7 +633,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "soup-of-the-day.jpg"
+    "photo": "soup-of-the-day.jpg",
+    "units": [
+     "صحن"
+    ]
    }
   ]
  },
@@ -485,7 +650,10 @@
     "description_ar": "لحمة مفرومة، هالبينو، أناناس، عجينة بيتزا، صنوبر، روست بيف، صوص بندورة، بيستو وخضار.",
     "description_en": "Ground beef, jalapeños, pineapple, pizza dough, pine nuts, roast beef, tomato sauce, pesto and vegetables.",
     "price": "6.50",
-    "photo": "pino-pizza.jpg"
+    "photo": "pino-pizza.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "بيتزا دجاج ألفريدو",
@@ -493,7 +661,10 @@
     "description_ar": "صوص كريمة متبّل، بندورة مجففة، صدر دجاج، فطر، جبنة موزاريلا، ريحان مقلي وعجينة بيتزا.",
     "description_en": "Spiced cream sauce, sundried tomatoes, chicken breast, mushrooms, mozzarella cheese, fried basil and pizza dough.",
     "price": "5.50",
-    "photo": "alfredo-chicken-pizza.jpg"
+    "photo": "alfredo-chicken-pizza.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "بيتزا دجاج بافلو",
@@ -501,7 +672,10 @@
     "description_ar": "صوص بيتزا، عجينة بيتزا، جبنة موزاريلا، صوص بافلو، صوص هني ماسترد، فلفل حلو ملوّن وذرة.",
     "description_en": "Pizza sauce, pizza dough, mozzarella cheese, buffalo sauce, honey mustard sauce, bell peppers (mixed colors) and corn.",
     "price": "5.50",
-    "photo": "chicken-buffalo-pizza.jpg"
+    "photo": "chicken-buffalo-pizza.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "بيتزا باربكيو",
@@ -509,7 +683,10 @@
     "description_ar": "صوص بندورة، صوص باربكيو، صوص رانش، جبنة موزاريلا، دجاج، عجينة بيتزا، فلفل حلو ملوّن وزيتون أسود.",
     "description_en": "Tomato sauce, barbecue sauce, ranch sauce, mozzarella cheese, chicken, pizza dough, bell peppers (mixed colors) and black olives.",
     "price": "5.50",
-    "photo": "bbq-pizza.jpg"
+    "photo": "bbq-pizza.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "بيتزا بيبروني",
@@ -517,7 +694,10 @@
     "description_ar": "صوص بيتزا، عجينة بيتزا وبيبروني.",
     "description_en": "Pizza sauce, pizza dough and pepperoni.",
     "price": "5.50",
-    "photo": "pepperoni-pizza.jpg"
+    "photo": "pepperoni-pizza.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "بيتزا خضار",
@@ -525,7 +705,10 @@
     "description_ar": "صوص بندورة، جبنة موزاريلا، عجينة بيتزا، فلفل حلو ملوّن، فطر، بصل، بندورة شيري، ذرة وأوريغانو.",
     "description_en": "Tomato sauce, mozzarella cheese, pizza dough, bell peppers (mixed colors), mushrooms, onion, cherry tomatoes, corn and oregano.",
     "price": "4.90",
-    "photo": "vegetarian-pizza.jpg"
+    "photo": "vegetarian-pizza.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "بيتزا مارغريتا",
@@ -533,7 +716,10 @@
     "description_ar": "عجينة بيتزا، صوص بندورة وجبنة موزاريلا.",
     "description_en": "Pizza dough, tomato sauce and mozzarella cheese.",
     "price": "4.50",
-    "photo": "margherita-pizza.jpg"
+    "photo": "margherita-pizza.jpg",
+    "units": [
+     "حبة"
+    ]
    }
   ]
  },
@@ -547,7 +733,10 @@
     "description_ar": "باستا كانيلوني، سبانخ، لحمة مفرومة، بصل، بندورة شيري، صوص بندورة، جبنة موزاريلا وصنوبر.",
     "description_en": "Cannelloni pasta, spinach, minced meat, onion, cherry tomatoes, tomato sauce, mozzarella cheese and pine nuts.",
     "price": "6.50",
-    "photo": "pino-pasta.jpg"
+    "photo": "pino-pasta.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فيتوتشيني ألفريدو",
@@ -555,7 +744,10 @@
     "description_ar": "باستا فيتوتشيني، فطر، كريمة، ملح، فلفل أبيض، جوزة الطيب، زيت ثوم وبارميزان.",
     "description_en": "Fettuccine pasta, mushrooms, cream, salt, white pepper, nutmeg, garlic oil and Parmesan.",
     "price": "4.90",
-    "photo": "fettuccine-alfredo.jpg"
+    "photo": "fettuccine-alfredo.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "بيني أرابياتا",
@@ -563,7 +755,10 @@
     "description_ar": "باستا بيني، فلفل حار، ثوم، صوص بندورة، بندورة مجففة، زيتون أسود، كزبرة وبارميزان.",
     "description_en": "Penne pasta, chili peppers, garlic, tomato sauce, sundried tomatoes, black olives, coriander and Parmesan.",
     "price": "4.90",
-    "photo": "penne-arrabbiata.jpg"
+    "photo": "penne-arrabbiata.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "بيني روزيه",
@@ -571,7 +766,10 @@
     "description_ar": "باستا بيني، صوص بندورة، كريمة وبندورة مجففة.",
     "description_en": "Penne pasta, tomato sauce, cream and sundried tomatoes.",
     "price": "4.90",
-    "photo": "penne-rose.jpg"
+    "photo": "penne-rose.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "لينغويني بيستو",
@@ -579,7 +777,10 @@
     "description_ar": "باستا لينغويني، صوص بيستو، كريمة، ملح، فلفل أبيض، ريحان مقلي وبارميزان.",
     "description_en": "Linguine pasta, pesto sauce, cream, salt, white pepper, fried basil and Parmesan.",
     "price": "4.90",
-    "photo": "linguine-pesto.jpg"
+    "photo": "linguine-pesto.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سباغيتي أليو أوليو",
@@ -587,7 +788,10 @@
     "description_ar": "باستا سباغيتي، زيت زيتون، بندورة مجففة، بارميزان وثوم.",
     "description_en": "Spaghetti pasta, olive oil, sundried tomatoes, Parmesan and garlic.",
     "price": "4.90",
-    "photo": "spaghetti-aglio-e-olio.jpg"
+    "photo": "spaghetti-aglio-e-olio.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سباغيتي بولونيز",
@@ -595,7 +799,10 @@
     "description_ar": "باستا سباغيتي، بولونيز، صوص بندورة وبارميزان.",
     "description_en": "Spaghetti pasta, Bolognese, tomato sauce and Parmesan.",
     "price": "5.50",
-    "photo": "spaghetti-bolognese.jpg"
+    "photo": "spaghetti-bolognese.jpg",
+    "units": [
+     "صحن"
+    ]
    }
   ]
  },
@@ -609,7 +816,10 @@
     "description_ar": "قطعة برجر لحم، خبز برجر، بطاطا مقلية، كاتشب، صوص بينو، صوص مدخّن، جبنة مدخّنة، خس لولو بيانكو، بندورة، مخلل، حلقات بصل، أصابع موزاريلا وبيف بيكن.",
     "description_en": "Beef burger patty, burger bun, fries, ketchup, Pino sauce, smoked sauce, smoked cheese, lollo bianco lettuce, tomato, pickles, onion rings, mozzarella sticks and beef bacon.",
     "price": "6.90",
-    "photo": "pino-beef-burger.jpg"
+    "photo": "pino-beef-burger.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "كلاسيك برجر لحم",
@@ -617,7 +827,10 @@
     "description_ar": "قطعة برجر لحم، خبز برجر، بطاطا مقلية، كاتشب، صوص بينو، خس لولو بيانكو، بندورة، بصل، مخلل، جبنة سائلة وكوكتيل صوص.",
     "description_en": "Beef burger patty, burger bun, fries, ketchup, Pino sauce, lollo bianco lettuce, tomato, onion, pickles, melted cheese and cocktail sauce.",
     "price": "5.50",
-    "photo": "classic-beef-burger.jpg"
+    "photo": "classic-beef-burger.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "برجر لحم بالفطر",
@@ -625,7 +838,10 @@
     "description_ar": "قطعة برجر لحم، خبز برجر، بطاطا مقلية، كاتشب، صوص بينو، فطر، بصل، صوص غريفي، جبنة إيمنتال ومايونيز.",
     "description_en": "Beef burger patty, burger bun, fries, ketchup, Pino sauce, mushrooms, onion, gravy, Emmental cheese and mayonnaise.",
     "price": "5.90",
-    "photo": "beef-mushroom-burger.jpg"
+    "photo": "beef-mushroom-burger.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "سموكي باربكيو برجر",
@@ -633,7 +849,10 @@
     "description_ar": "قطعة برجر لحم، خبز برجر، بطاطا مقلية، كاتشب، صوص بينو، صوص باربكيو، صوص رانش، خس لولو بيانكو، بندورة، مخلل، جبنة موزاريلا، روست بيف وحلقات بصل.",
     "description_en": "Beef burger patty, burger bun, fries, ketchup, Pino sauce, barbecue sauce, ranch dressing, lollo bianco lettuce, tomato, pickles, mozzarella cheese, roast beef and onion rings.",
     "price": "5.90",
-    "photo": "smoky-bbq-burger.jpg"
+    "photo": "smoky-bbq-burger.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "سلايدرز لحم",
@@ -641,7 +860,10 @@
     "description_ar": "قطعة برجر لحم، خبز برجر صغير (3 قطع)، بطاطا مقلية، كاتشب، صوص بينو، خس لولو بيانكو، بندورة، مخلل وكوكتيل صوص.",
     "description_en": "Beef burger patty, mini burger buns (3 pieces), fries, ketchup, Pino sauce, lollo bianco lettuce, tomato, pickles and cocktail sauce.",
     "price": "5.90",
-    "photo": "beef-sliders.jpg"
+    "photo": "beef-sliders.jpg",
+    "units": [
+     "حبة"
+    ]
    }
   ]
  },
@@ -655,7 +877,10 @@
     "description_ar": "فيليه لحم، صوص باربكيو، أجبان مشكّلة، خبز تشاباتا، صويا صوص، كاتشب، بطاطا مقلية، فطر، جرجير وبصل.",
     "description_en": "Beef fillet, BBQ sauce, mixed cheese, ciabatta bread, soy sauce, ketchup, fries, mushrooms, rocca and onion.",
     "price": "7.50",
-    "photo": "steak-sandwich.jpg"
+    "photo": "steak-sandwich.jpg",
+    "units": [
+     "ساندويشة"
+    ]
    },
    {
     "name_ar": "ساندويش دجاج كرنشي (حار)",
@@ -663,7 +888,10 @@
     "description_ar": "صدر دجاج مقلي، صوص بافلو، هني ماسترد، مخلل، جبنة سائلة، صوص بينو، كاتشب، بطاطا مقلية وخس آيسبيرغ.",
     "description_en": "Fried chicken breast, buffalo sauce, honey mustard, pickles, melted cheese, Pino sauce, ketchup, fries and iceberg lettuce.",
     "price": "5.50",
-    "photo": "crunchy-chicken-sandwich-spicy.jpg"
+    "photo": "crunchy-chicken-sandwich-spicy.jpg",
+    "units": [
+     "ساندويشة"
+    ]
    },
    {
     "name_ar": "ساندويش دجاج كرنشي (عادي)",
@@ -671,7 +899,10 @@
     "description_ar": "صدر دجاج مقلي، صوص باربكيو، صوص رانش، مخلل، جبنة سائلة، خس آيسبيرغ، صوص بينو، كاتشب وبطاطا مقلية.",
     "description_en": "Fried chicken breast, barbecue sauce, ranch dressing, pickles, melted cheese, iceberg lettuce, Pino sauce, ketchup and fries.",
     "price": "5.50",
-    "photo": "crunchy-chicken-sandwich-normal.jpg"
+    "photo": "crunchy-chicken-sandwich-normal.jpg",
+    "units": [
+     "ساندويشة"
+    ]
    },
    {
     "name_ar": "ساندويش باربكيو",
@@ -679,7 +910,10 @@
     "description_ar": "صوص بينو، كاتشب، بطاطا مقلية، صوص باربكيو، صوص رانش، دجاج، فطر، فلفل حلو ملوّن، خس آيسبيرغ، جبنة شيدر مبشورة، زبدة، ملح وفلفل أبيض.",
     "description_en": "Pino sauce, ketchup, fries, barbecue sauce, ranch dressing, chicken, mushrooms, bell peppers (mixed colors), iceberg lettuce, shredded cheddar cheese, butter, salt and white pepper.",
     "price": "5.50",
-    "photo": "bbq-sandwich.jpg"
+    "photo": "bbq-sandwich.jpg",
+    "units": [
+     "ساندويشة"
+    ]
    },
    {
     "name_ar": "ساندويش بافلو",
@@ -687,7 +921,10 @@
     "description_ar": "دجاج، صوص بافلو، صوص رانش، مخلل، موزاريلا وهالبينو.",
     "description_en": "Chicken, buffalo sauce, ranch sauce, pickles, mozzarella and jalapeño.",
     "price": "5.50",
-    "photo": "buffalo-sandwich.jpg"
+    "photo": "buffalo-sandwich.jpg",
+    "units": [
+     "ساندويشة"
+    ]
    },
    {
     "name_ar": "ساندويش دجاج ألفريدو",
@@ -695,7 +932,10 @@
     "description_ar": "صوص بينو، كاتشب، بطاطا مقلية، دجاج، فطر، كريمة، بصل، زبدة، بندورة مجففة، ملح، فلفل أبيض وأجبان مشكّلة.",
     "description_en": "Pino sauce, ketchup, fries, chicken, mushrooms, cream, onion, butter, sundried tomatoes, salt, white pepper and cheese mix.",
     "price": "5.50",
-    "photo": "alfredo-chicken-sandwich.jpg"
+    "photo": "alfredo-chicken-sandwich.jpg",
+    "units": [
+     "ساندويشة"
+    ]
    },
    {
     "name_ar": "ساندويش حلوم",
@@ -703,7 +943,10 @@
     "description_ar": "كرواسون، حلوم مشوي (4 قطع)، جرجير، بندورة مجففة، صوص بينو، كاتشب، بطاطا مقلية وبيستو.",
     "description_en": "Croissant, grilled halloumi (4 pieces), arugula, sundried tomatoes, Pino sauce, ketchup, fries and pesto.",
     "price": "4.50",
-    "photo": "halloumi-sandwich.jpg"
+    "photo": "halloumi-sandwich.jpg",
+    "units": [
+     "ساندويشة"
+    ]
    }
   ]
  },
@@ -717,7 +960,10 @@
     "description_ar": "ستيك فيليه، بطاطا مهروسة، جزر، كوسا، ذرة صغيرة، بروكلي، زبدة كافيه دو باري وصوص حسب الاختيار: صوص فطر أو صوص فلفل.",
     "description_en": "Steak fillet, mashed potatoes, carrot, zucchini, baby corn, broccoli, Café de Paris butter and a sauce of choice: mushroom or pepper sauce.",
     "price": "13.50",
-    "photo": "grilled-fillet-steak.jpg"
+    "photo": "grilled-fillet-steak.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "صدر دجاج مشوي",
@@ -725,7 +971,10 @@
     "description_ar": "صدر دجاج، بطاطا مهروسة، بروكلي، ذرة صغيرة، جزر وكوسا، مع صوص حسب اختيارك: ليمون أو فطر أو بيستو.",
     "description_en": "Chicken breast, mashed potatoes, broccoli, baby corn, carrot and zucchini, with your choice of sauce: lemon, mushroom or pesto.",
     "price": "9.50",
-    "photo": "grilled-chicken-breast.jpg"
+    "photo": "grilled-chicken-breast.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "ستيك الأناناس المشوي",
@@ -733,7 +982,10 @@
     "description_ar": "أناناس، بصل، فيليه لحم، صويا صوص، سويت تشيلي صوص، ملح، فلفل أسود، زبدة، صنوبر وزنجبيل.",
     "description_en": "Pineapple, onion, beef fillet, soy sauce, sweet chili sauce, salt, black pepper, butter, pine nuts and ginger.",
     "price": "15.90",
-    "photo": "beef-pineapple-pino.jpg"
+    "photo": "beef-pineapple-pino.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "ستيك ريب آي",
@@ -741,7 +993,10 @@
     "description_ar": "ريب آي، بطاطا مهروسة، جزر، كوسا، ذرة صغيرة، بروكلي، زبدة كافيه دو باري، صوص حسب الاختيار، صوص ريب آي وبطاطا صغيرة.",
     "description_en": "Ribeye, mashed potatoes, carrot, zucchini, baby corn, broccoli, Café de Paris butter, sauce of choice, ribeye sauce and baby potatoes.",
     "price": "21.90",
-    "photo": "rib-eye-steak.jpg"
+    "photo": "rib-eye-steak.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فاهيتا لحم",
@@ -749,7 +1004,10 @@
     "description_ar": "بهارات مكسيكية، ساور كريم، جواكامولي، تورتيلا، بصل، فلفل حلو ملوّن، صويا صوص، فلفل أسود، بابريكا، كمون، أناناس، فلفل حار وفيليه لحم.",
     "description_en": "Mexican seasoning, sour cream, guacamole, tortilla, onion, bell peppers (mixed colors), soy sauce, black pepper, paprika, cumin, pineapple, chili pepper and beef fillet.",
     "price": "14.90",
-    "photo": "sizzling-beef-fajita.jpg"
+    "photo": "sizzling-beef-fajita.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فاهيتا دجاج",
@@ -757,7 +1015,10 @@
     "description_ar": "بهارات مكسيكية، ساور كريم، جواكامولي، تورتيلا، بصل، فلفل حلو ملوّن، صويا صوص، فلفل أسود، بابريكا، كمون، أناناس، فلفل حار ودجاج.",
     "description_en": "Mexican seasoning, sour cream, guacamole, tortilla, onion, bell peppers (mixed colors), soy sauce, black pepper, paprika, cumin, pineapple, chili pepper and chicken.",
     "price": "8.90",
-    "photo": "sizzling-chicken-fajita.jpg"
+    "photo": "sizzling-chicken-fajita.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "لحم ماسالا",
@@ -765,7 +1026,10 @@
     "description_ar": "صحن رز أبيض، فيليه لحم، صوص ماسالا، كزبرة وكريمة.",
     "description_en": "White rice plate, beef fillet, masala sauce, coriander and cream.",
     "price": "11.90",
-    "photo": "beef-masala.jpg"
+    "photo": "beef-masala.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "دجاج بالكاري",
@@ -773,7 +1037,10 @@
     "description_ar": "صحن رز أبيض، دجاج، فلفل حلو ملوّن، بصل، كاري، حليب، كريمة، ملح وفلفل أبيض.",
     "description_en": "White rice plate, chicken, bell peppers (mixed colors), onion, curry, milk, cream, salt and white pepper.",
     "price": "8.90",
-    "photo": "chicken-curry.jpg"
+    "photo": "chicken-curry.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "سلمون مكرمل",
@@ -781,7 +1048,10 @@
     "description_ar": "سلمون، عسل، بطاطا مهروسة، جزر، كوسا، ذرة صغيرة، بروكلي وصوص كريمة بالليمون والشبت والكبر.",
     "description_en": "Salmon, honey, mashed potatoes, carrot, zucchini, baby corn, broccoli and creamy lemon dill caper sauce.",
     "price": "11.90",
-    "photo": "caramelized-salmon.jpg"
+    "photo": "caramelized-salmon.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فيليه سلمون مشوي",
@@ -789,7 +1059,10 @@
     "description_ar": "سلمون، عجينة بف باستري، بطاطا مهروسة، جزر، كوسا، ذرة صغيرة، بروكلي، سبانخ، بندورة شيري، صوص كريمة بالليمون والشبت والكبر وبصل.",
     "description_en": "Salmon, puff pastry, mashed potatoes, carrot, zucchini, baby corn, broccoli, spinach, cherry tomatoes, creamy lemon dill caper sauce and onion.",
     "price": "11.90",
-    "photo": "grilled-salmon-fillet.jpg"
+    "photo": "grilled-salmon-fillet.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "فيش آند تشيبس",
@@ -797,7 +1070,10 @@
     "description_ar": "فيليه سمك مقلي، بطاطا مقلية وصوص تارتار.",
     "description_en": "Fried fish fillet, fries and tartar sauce.",
     "price": "7.90",
-    "photo": "fish-and-chips.jpg"
+    "photo": "fish-and-chips.jpg",
+    "units": [
+     "صحن"
+    ]
    }
   ]
  },
@@ -811,7 +1087,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "5.50",
-    "photo": "choco-lava-cookie.jpg"
+    "photo": "choco-lava-cookie.jpg",
+    "units": [
+     "صحن"
+    ]
    },
    {
     "name_ar": "تيراميسو",
@@ -819,7 +1098,10 @@
     "description_ar": "تيراميسو، شوكولاتة بيضاء للتزيين وبسكويت مطحون.",
     "description_en": "Tiramisu, white chocolate for garnish and crushed biscuits.",
     "price": "5.50",
-    "photo": "tiramisu.jpg"
+    "photo": "tiramisu.jpg",
+    "units": [
+     "قطعة"
+    ]
    },
    {
     "name_ar": "فوندان شوكولاتة",
@@ -827,7 +1109,10 @@
     "description_ar": "خلطة فوندو، بوظة فانيلا، فراولة وسكر بودرة.",
     "description_en": "Fondue mix, vanilla ice cream, strawberries and powdered sugar.",
     "price": "5.50",
-    "photo": "chocolate-fondant.jpg"
+    "photo": "chocolate-fondant.jpg",
+    "units": [
+     "قطعة"
+    ]
    },
    {
     "name_ar": "براونيز",
@@ -835,7 +1120,10 @@
     "description_ar": "مربعات شوكولاتة كثيفة وطرية بقشرة مقرمشة قليلاً، بنكهة كاكاو غنية وقلب رطب وطري، حلوى كلاسيكية فاخرة.",
     "description_en": "Dense and fudgy chocolate squares with a slightly crispy crust, rich cocoa flavor and a moist, chewy center, a classic indulgent dessert.",
     "price": "4.50",
-    "photo": "brownie.jpg"
+    "photo": "brownie.jpg",
+    "units": [
+     "قطعة"
+    ]
    },
    {
     "name_ar": "تشيز كيك",
@@ -843,7 +1131,10 @@
     "description_ar": "قطعة تشيز كيك. اختر النكهة: بلوبيري، فراولة أو فستق حلبي.",
     "description_en": "Cheesecake slice. Choose a flavor: blueberry, strawberry or pistachio.",
     "price": "4.50",
-    "photo": "cheesecake.jpg"
+    "photo": "cheesecake.jpg",
+    "units": [
+     "قطعة"
+    ]
    },
    {
     "name_ar": "فطيرة التفاح",
@@ -851,7 +1142,10 @@
     "description_ar": "عجينة ذهبية هشة محشوة بشرائح تفاح طرية متبّلة، مخبوزة حتى تتكرمل، تقدّم دافئة وغالباً مع كرة بوظة فانيلا.",
     "description_en": "Flaky golden crust filled with tender spiced apple slices, baked until bubbly and caramelized, served warm, often with a scoop of vanilla ice cream.",
     "price": "4.50",
-    "photo": "apple-pie.jpg"
+    "photo": "apple-pie.jpg",
+    "units": [
+     "قطعة"
+    ]
    }
   ]
  },
@@ -865,7 +1159,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "sahlab.jpg"
+    "photo": "sahlab.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "كافيه لاتيه",
@@ -873,7 +1170,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "caf-latte.jpg"
+    "photo": "caf-latte.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "كابتشينو",
@@ -881,7 +1181,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "cappuccino.jpg"
+    "photo": "cappuccino.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "مكياتو",
@@ -889,7 +1192,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "macchiato.jpg"
+    "photo": "macchiato.jpg",
+    "units": [
+     "فنجان"
+    ]
    },
    {
     "name_ar": "سبانش لاتيه",
@@ -897,7 +1203,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "spanish-latte.jpg"
+    "photo": "spanish-latte.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "بيستاشيو لاتيه",
@@ -905,7 +1214,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "pistachio-latte.jpg"
+    "photo": "pistachio-latte.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "موكا",
@@ -913,7 +1225,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "mocha.jpg"
+    "photo": "mocha.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "كاراميل مكياتو",
@@ -921,7 +1236,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "caramel-macchiato.jpg"
+    "photo": "caramel-macchiato.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "قهوة فرنسية",
@@ -929,7 +1247,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "french-coffee.jpg"
+    "photo": "french-coffee.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "هوت شوكليت",
@@ -937,7 +1258,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "hot-chocolate.jpg"
+    "photo": "hot-chocolate.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "قهوة تركية سنجل",
@@ -945,7 +1269,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.75",
-    "photo": "turkish-coffee-single.jpg"
+    "photo": "turkish-coffee-single.jpg",
+    "units": [
+     "فنجان"
+    ]
    },
    {
     "name_ar": "قهوة تركية دبل",
@@ -953,7 +1280,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.75",
-    "photo": "turkish-coffee-double.jpg"
+    "photo": "turkish-coffee-double.jpg",
+    "units": [
+     "فنجان"
+    ]
    },
    {
     "name_ar": "إسبريسو سنجل",
@@ -961,7 +1291,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.90",
-    "photo": "single-espresso.jpg"
+    "photo": "single-espresso.jpg",
+    "units": [
+     "فنجان"
+    ]
    },
    {
     "name_ar": "إسبريسو دبل",
@@ -969,7 +1302,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "double-espresso.jpg"
+    "photo": "double-espresso.jpg",
+    "units": [
+     "فنجان"
+    ]
    },
    {
     "name_ar": "أمريكانو",
@@ -977,7 +1313,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "americano.jpg"
+    "photo": "americano.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "قهوة أمريكية",
@@ -985,7 +1324,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "american-coffee.jpg"
+    "photo": "american-coffee.jpg",
+    "units": [
+     "كوب"
+    ]
    },
    {
     "name_ar": "نسكافيه",
@@ -993,7 +1335,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "nescafe.jpg"
+    "photo": "nescafe.jpg",
+    "units": [
+     "كوب"
+    ]
    }
   ]
  },
@@ -1007,7 +1352,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.75",
-    "photo": "regular-tea.jpg"
+    "photo": "regular-tea.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "شاي أخضر",
@@ -1015,7 +1363,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.75",
-    "photo": "green-tea.jpg"
+    "photo": "green-tea.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "إبريق شاي",
@@ -1023,7 +1374,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "5.50",
-    "photo": "tea-pot.jpg"
+    "photo": "tea-pot.jpg",
+    "units": [
+     "إبريق"
+    ]
    },
    {
     "name_ar": "شاي كرك",
@@ -1031,7 +1385,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "karak-tea.jpg"
+    "photo": "karak-tea.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "زنجبيل وعسل وحليب",
@@ -1039,7 +1396,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "ginger-and-honey-and-milk.jpg"
+    "photo": "ginger-and-honey-and-milk.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "زنجبيل وعسل وليمون",
@@ -1047,7 +1407,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "ginger-and-honey-and-lemon.jpg"
+    "photo": "ginger-and-honey-and-lemon.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "يانسون",
@@ -1055,7 +1418,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.75",
-    "photo": "anise.jpg"
+    "photo": "anise.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "أعشاب",
@@ -1063,7 +1429,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.75",
-    "photo": "herbs.jpg"
+    "photo": "herbs.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "ميرمية",
@@ -1071,7 +1440,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.75",
-    "photo": "sage.jpg"
+    "photo": "sage.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1085,7 +1457,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "iced-coffee.jpg"
+    "photo": "iced-coffee.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "آيس لاتيه",
@@ -1093,7 +1468,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "iced-latte.jpg"
+    "photo": "iced-latte.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "آيس كاراميل",
@@ -1101,7 +1479,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "4.50",
-    "photo": "iced-caramel.jpg"
+    "photo": "iced-caramel.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "آيس سبانش",
@@ -1109,7 +1490,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "4.50",
-    "photo": "iced-spanish.jpg"
+    "photo": "iced-spanish.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "آيس موكا",
@@ -1117,7 +1501,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "iced-mocha.jpg"
+    "photo": "iced-mocha.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "فرابتشينو فانيلا",
@@ -1125,7 +1512,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "4.50",
-    "photo": "vanilla-frappuccino.jpg"
+    "photo": "vanilla-frappuccino.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "فرابتشينو كاراميل",
@@ -1133,7 +1523,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "4.50",
-    "photo": "caramel-frappuccino.jpg"
+    "photo": "caramel-frappuccino.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "فرابتشينو شوكولاتة",
@@ -1141,7 +1534,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "4.50",
-    "photo": "chocolate-frappuccino.jpg"
+    "photo": "chocolate-frappuccino.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1155,7 +1551,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "orange.jpg"
+    "photo": "orange.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "عصير ليمون",
@@ -1163,7 +1562,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "lemon.jpg"
+    "photo": "lemon.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "ليمون ونعنع",
@@ -1171,7 +1573,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "lemon-and-mint.jpg"
+    "photo": "lemon-and-mint.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "عصير مانجا",
@@ -1179,7 +1584,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "mango.jpg"
+    "photo": "mango.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "عصير كيوي",
@@ -1187,7 +1595,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "kiwi.jpg"
+    "photo": "kiwi.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "عصير فراولة",
@@ -1195,7 +1606,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "strawberry.jpg"
+    "photo": "strawberry.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "عصير جزر",
@@ -1203,7 +1617,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "carrot.jpg"
+    "photo": "carrot.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "عصير رمان",
@@ -1211,7 +1628,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "pomegranate.jpg"
+    "photo": "pomegranate.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "عصير أناناس",
@@ -1219,7 +1639,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.90",
-    "photo": "pineapple.jpg"
+    "photo": "pineapple.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1233,7 +1656,10 @@
     "description_ar": "فراولة، عصير ليمون، بيوريه توت مشكّل وبيوريه بلوبيري.",
     "description_en": "Strawberry, lemon juice, mixed berry puree and blueberry puree.",
     "price": "4.90",
-    "photo": "triple-berry.jpg"
+    "photo": "triple-berry.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "بلو سكاي",
@@ -1241,7 +1667,10 @@
     "description_ar": "عصير ليمون، سيرب بلو كوراساو، سيرب علكة وعصير تفاح طازج.",
     "description_en": "Lemon juice, blue curaçao syrup, bubble gum syrup and fresh apple juice.",
     "price": "4.50",
-    "photo": "blue-sky.jpg"
+    "photo": "blue-sky.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "صن شاين",
@@ -1249,7 +1678,10 @@
     "description_ar": "عصير مانجا، عصير برتقال، بيوريه باشن فروت وشرائح أناناس.",
     "description_en": "Mango juice, orange juice, passion fruit puree and pineapple slices.",
     "price": "4.50",
-    "photo": "sunshine.jpg"
+    "photo": "sunshine.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "بينك مينت",
@@ -1257,7 +1689,10 @@
     "description_ar": "عصير فراولة، عصير ليمون، نعنع طازج وسيرب فراولة.",
     "description_en": "Strawberry juice, lemon juice, fresh mint and strawberry syrup.",
     "price": "4.50",
-    "photo": "pink-mint.jpg"
+    "photo": "pink-mint.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "ديلايت",
@@ -1265,7 +1700,10 @@
     "description_ar": "تفاح طازج، سيرب تفاح، بيوريه أناناس، بيوريه باشن فروت وعصير أناناس.",
     "description_en": "Fresh apple, apple syrup, pineapple puree, passion fruit puree and pineapple juice.",
     "price": "4.50",
-    "photo": "delight.jpg"
+    "photo": "delight.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "هاواي",
@@ -1273,7 +1711,10 @@
     "description_ar": "بيوريه باشن فروت، مانجا طازجة، سيرب جوز الهند وبلوبيري.",
     "description_en": "Passion fruit puree, fresh mango, coconut syrup and blueberry.",
     "price": "4.50",
-    "photo": "hawaii.jpg"
+    "photo": "hawaii.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1287,7 +1728,10 @@
     "description_ar": "حبة أفوكادو واحدة، بوظة فانيلا، عسل، فستق حلبي وحليب.",
     "description_en": "1 avocado, vanilla ice cream, honey, pistachios and milk.",
     "price": "4.90",
-    "photo": "avocado.jpg"
+    "photo": "avocado.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "كوكتيل باشن فروت",
@@ -1295,7 +1739,10 @@
     "description_ar": "بيوريه باشن فروت، بوظة فانيلا، عصير مانجا وغرينادين.",
     "description_en": "Passion fruit puree, vanilla ice cream, mango juice and grenadine.",
     "price": "4.50",
-    "photo": "passion-fruit.jpg"
+    "photo": "passion-fruit.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "بلوبيري فيوجن",
@@ -1303,7 +1750,10 @@
     "description_ar": "بوظة فانيلا، عصير أناناس، بلوبيري وشريحة أناناس.",
     "description_en": "Vanilla ice cream, pineapple juice, blueberry and pineapple slice.",
     "price": "4.50",
-    "photo": "blueberry-fusion.jpg"
+    "photo": "blueberry-fusion.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "بيناكولادا",
@@ -1311,7 +1761,10 @@
     "description_ar": "بوظة فانيلا، عصير أناناس، شريحة أناناس وبيوريه جوز الهند.",
     "description_en": "Vanilla ice cream, pineapple juice, pineapple slice and coconut puree.",
     "price": "4.50",
-    "photo": "pinacolada.jpg"
+    "photo": "pinacolada.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "مانجا وريحان",
@@ -1319,7 +1772,10 @@
     "description_ar": "مانجا، ريحان، بوظة فانيلا، بيوريه بلوبيري وفراولة طازجة.",
     "description_en": "Mango, basil, vanilla ice cream, blueberry puree and fresh strawberry.",
     "price": "4.50",
-    "photo": "mango-basil.jpg"
+    "photo": "mango-basil.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "ريلاكسر",
@@ -1327,7 +1783,10 @@
     "description_ar": "بوظة فراولة، شرائح حمضيات، بيوريه بلوبيري وعصير برتقال.",
     "description_en": "Strawberry ice cream, citrus slices, blueberry puree and orange juice.",
     "price": "4.50",
-    "photo": "relaxer.jpg"
+    "photo": "relaxer.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "موز بحليب",
@@ -1335,7 +1794,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "4.50",
-    "photo": "banana-milk.jpg"
+    "photo": "banana-milk.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "موز بحليب وفراولة",
@@ -1343,7 +1805,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "4.50",
-    "photo": "banana-milk-strawberry.jpg"
+    "photo": "banana-milk-strawberry.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "ليمون وجرجير",
@@ -1351,7 +1816,10 @@
     "description_ar": "جرجير، عصير ليمون وبوظة فانيلا.",
     "description_en": "Rocca, lemon juice and vanilla ice cream.",
     "price": "4.50",
-    "photo": "lemon-rocca.jpg"
+    "photo": "lemon-rocca.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1365,7 +1833,10 @@
     "description_ar": "غرينادين، بلو كوراساو، ريد بول، عصير توت بري وعصير ليمون.",
     "description_en": "Grenadine, blue curaçao, Red Bull, cranberry juice and lemon juice.",
     "price": "4.90",
-    "photo": "black-vibes.jpg"
+    "photo": "black-vibes.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "إلكتريك سبايسي",
@@ -1373,7 +1844,10 @@
     "description_ar": "ليمون، عسل، سيرب حار وريد بول.",
     "description_en": "Lemon, honey, spicy syrup and Red Bull.",
     "price": "4.90",
-    "photo": "electric-spicy.jpg"
+    "photo": "electric-spicy.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "تروبيكال سبيشال",
@@ -1381,7 +1855,10 @@
     "description_ar": "عصير برتقال، عسل، سيرب حار وريد بول.",
     "description_en": "Orange juice, honey, spicy syrup and Red Bull.",
     "price": "4.90",
-    "photo": "tropical-special.jpg"
+    "photo": "tropical-special.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "لافندر ليمون",
@@ -1389,7 +1866,10 @@
     "description_ar": "سيرب لافندر، بلو كوراساو، عصير ليمون وصودا.",
     "description_en": "Lavender syrup, blue curaçao, lemon juice and soda.",
     "price": "3.90",
-    "photo": "lavender-lemon.jpg"
+    "photo": "lavender-lemon.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "آيس تي",
@@ -1397,7 +1877,10 @@
     "description_ar": "اختر النكهة.",
     "description_en": "Choose your flavor.",
     "price": "3.90",
-    "photo": "iced-tea.jpg"
+    "photo": "iced-tea.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1411,7 +1894,10 @@
     "description_ar": "سيرب موهيتو، عصير ليمون ونعنع طازج.",
     "description_en": "Mojito syrup, lemon juice and fresh mint.",
     "price": "3.90",
-    "photo": "classic.jpg"
+    "photo": "classic.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "موهيتو فراولة",
@@ -1419,7 +1905,10 @@
     "description_ar": "سيرب موهيتو، سيرب فراولة، شريحة ليمون ونعنع طازج.",
     "description_en": "Mojito syrup, strawberry syrup, lemon slice and fresh mint.",
     "price": "3.90",
-    "photo": "strawberry-mojito.jpg"
+    "photo": "strawberry-mojito.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "موهيتو دراغون فروت",
@@ -1427,7 +1916,10 @@
     "description_ar": "سيرب موهيتو، بيوريه دراغون فروت، شريحة ليمون ونعنع طازج.",
     "description_en": "Mojito syrup, dragon fruit puree, lemon slice and fresh mint.",
     "price": "4.50",
-    "photo": "dragon-fruit.jpg"
+    "photo": "dragon-fruit.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "موهيتو باشن فروت",
@@ -1435,7 +1927,10 @@
     "description_ar": "سيرب موهيتو، بيوريه باشن فروت، شريحة ليمون ونعنع طازج.",
     "description_en": "Mojito syrup, passion fruit puree, lemon slice and fresh mint.",
     "price": "3.90",
-    "photo": "passion.jpg"
+    "photo": "passion.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "موهيتو توت مشكّل",
@@ -1443,7 +1938,10 @@
     "description_ar": "سيرب موهيتو، بيوريه توت مشكّل، شريحة ليمون ونعنع طازج.",
     "description_en": "Mojito syrup, mixed berry puree, lemon slice and fresh mint.",
     "price": "4.50",
-    "photo": "mix-berry.jpg"
+    "photo": "mix-berry.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1457,7 +1955,10 @@
     "description_ar": "اختر النكهة.",
     "description_en": "Choose your flavor.",
     "price": "4.50",
-    "photo": "milk-shakes.jpg"
+    "photo": "milk-shakes.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1471,7 +1972,10 @@
     "description_ar": "جوز هند، بلو كوراساو، بوظة فانيلا، عصير ليمون وشرائح أناناس.",
     "description_en": "Coconut, blue curaçao, vanilla ice cream, lemon juice and pineapple slices.",
     "price": "7.90",
-    "photo": "pino-pineapple.jpg"
+    "photo": "pino-pineapple.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "سموذي بينو",
@@ -1479,7 +1983,10 @@
     "description_ar": "خوخ، عصير برتقال، توت مشكّل وباشن فروت.",
     "description_en": "Peach, orange juice, mixed berries and passion fruit.",
     "price": "6.50",
-    "photo": "pino-smoothie.jpg"
+    "photo": "pino-smoothie.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "كوكتيل بينو",
@@ -1487,7 +1994,10 @@
     "description_ar": "بوظة فانيلا، جوز هند، توت مشكّل، باشن فروت وعصير فراولة.",
     "description_en": "Vanilla ice cream, coconut, mixed berry, passion fruit and strawberry juice.",
     "price": "6.50",
-    "photo": "pino-cocktail.jpg"
+    "photo": "pino-cocktail.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "بينو شيك",
@@ -1495,7 +2005,10 @@
     "description_ar": "بوظة فانيلا، حليب، بسكويت بريتزل، كراميل مملّح وكريمة.",
     "description_en": "Vanilla ice cream, milk, pretzel biscuit, salted caramel and cream.",
     "price": "6.50",
-    "photo": "pino-shake.jpg"
+    "photo": "pino-shake.jpg",
+    "units": [
+     "كاسة"
+    ]
    },
    {
     "name_ar": "قهوة بينو",
@@ -1503,7 +2016,10 @@
     "description_ar": "بوظة فانيلا، بسكويت لوتس، قرفة، جوز، حليب، إسبريسو وكريمة مخفوقة.",
     "description_en": "Vanilla ice cream, Lotus biscuits, cinnamon, walnuts, milk, espresso and whipped cream.",
     "price": "5.90",
-    "photo": "pino-coffee.jpg"
+    "photo": "pino-coffee.jpg",
+    "units": [
+     "كاسة"
+    ]
    }
   ]
  },
@@ -1517,7 +2033,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "1.00",
-    "photo": "small-water.jpg"
+    "photo": "small-water.jpg",
+    "units": [
+     "قنينة"
+    ]
    },
    {
     "name_ar": "مشروب غازي",
@@ -1525,7 +2044,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.50",
-    "photo": "soda-drink.jpg"
+    "photo": "soda-drink.jpg",
+    "units": [
+     "علبة"
+    ]
    },
    {
     "name_ar": "مياه غازية",
@@ -1533,7 +2055,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.50",
-    "photo": "sparkling-water.jpg"
+    "photo": "sparkling-water.jpg",
+    "units": [
+     "قنينة"
+    ]
    },
    {
     "name_ar": "ريد بول",
@@ -1541,7 +2066,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.50",
-    "photo": "red-bull.jpg"
+    "photo": "red-bull.jpg",
+    "units": [
+     "علبة"
+    ]
    },
    {
     "name_ar": "باربيكان",
@@ -1549,7 +2077,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.50",
-    "photo": "barbican.jpg"
+    "photo": "barbican.jpg",
+    "units": [
+     "قنينة"
+    ]
    }
   ]
  },
@@ -1563,7 +2094,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "6.40",
-    "photo": "standard-shisha.jpg"
+    "photo": "standard-shisha.jpg",
+    "units": [
+     "أرجيلة"
+    ]
    },
    {
     "name_ar": "أرجيلة بينو سبيشال",
@@ -1571,7 +2105,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "14.90",
-    "photo": "pino-special.jpg"
+    "photo": "pino-special.jpg",
+    "units": [
+     "أرجيلة"
+    ]
    },
    {
     "name_ar": "أرجيلة مستر وود",
@@ -1579,7 +2116,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "14.90",
-    "photo": "mr-wood-shisha.jpg"
+    "photo": "mr-wood-shisha.jpg",
+    "units": [
+     "أرجيلة"
+    ]
    },
    {
     "name_ar": "أرجيلة كلاود لوف",
@@ -1587,7 +2127,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "11.90",
-    "photo": "cloud-love.jpg"
+    "photo": "cloud-love.jpg",
+    "units": [
+     "أرجيلة"
+    ]
    },
    {
     "name_ar": "قاعدة مضيئة",
@@ -1595,7 +2138,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.00",
-    "photo": "light-stand.jpg"
+    "photo": "light-stand.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "بربيش ثلج",
@@ -1603,7 +2149,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "3.00",
-    "photo": "ice-pipe.jpg"
+    "photo": "ice-pipe.jpg",
+    "units": [
+     "حبة"
+    ]
    },
    {
     "name_ar": "تغيير راس",
@@ -1611,7 +2160,10 @@
     "description_ar": null,
     "description_en": null,
     "price": "2.40",
-    "photo": "change-head.jpg"
+    "photo": "change-head.jpg",
+    "units": [
+     "راس"
+    ]
    }
   ]
  }

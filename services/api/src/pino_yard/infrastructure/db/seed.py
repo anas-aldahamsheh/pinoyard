@@ -18,6 +18,7 @@ from pino_yard.infrastructure.db.models import (
 )
 from pino_yard.domain.enums import UserRole, TableShape
 from pino_yard.domain.money import jod_to_fils
+from pino_yard.domain.units import units_to_json
 from pino_yard.infrastructure.auth.passwords import hash_password
 from pino_yard.infrastructure.media_store import media_store
 from pino_yard.settings import settings
@@ -66,7 +67,8 @@ BRANCHES = (
     },
 )
 
-# [{name_ar, name_en, products: [{name_ar, name_en, description_ar, description_en, price, photo}]}]
+# [{name_ar, name_en, products: [{name_ar, name_en, description_ar, description_en, price, units, photo}]}]
+# units: how the dish is counted (صحن، كاسة، حبة، فنجان، أرجيلة...), as the admin would set them.
 MENU = json.loads(Path(__file__).with_name("seed_menu.json").read_text(encoding="utf-8"))
 
 
@@ -146,6 +148,7 @@ async def seed_database(session: AsyncSession) -> None:
                     description_ar=dish["description_ar"],
                     description_en=dish["description_en"],
                     price_minor=jod_to_fils(dish["price"]),
+                    units_json=units_to_json(dish.get("units") or []),
                     currency="JOD",
                     is_available=True,
                     sort_order=dish_order,
