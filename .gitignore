@@ -1,0 +1,66 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JavaScript / Next.js
+node_modules/
+.next/
+out/
+coverage/
+.turbo/
+*.tsbuildinfo
+
+# Local databases, logs, and generated files
+*.sqlite
+*.sqlite3
+*.db
+*.log
+logs/
+tmp/
+temp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Uploaded dish photos (MEDIA_DIR)
+services/api/media/
+
+# Local project specification files
+/pino_yard_build_spec/
+
+# Public test link (run_public.bat): its own photo folder
+services/api/media-public/
+
+# Internal notes and handoff docs (only README.md is published)
+*.md
+!/README.md
+docs/
+run.txt

@@ -1,0 +1,67 @@
+# Values come from the .env file next to this one (see .env.example).
+#
+#   Local development (database only; run the API and website with run_all.bat):
+#     docker compose up -d
+#
+#   Whole application (database + API + website) on a server:
+#     docker compose --profile app up -d --build
+#   Put an HTTPS reverse proxy (Caddy, nginx, a cloud load balancer) in front of
+#   ports 3000 (website) and 8000 (API); both are only reachable from this machine.
+
+name: pinoyard
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: pino_yard_postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-pino_yard_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in the .env file (see .env.example)}
+      POSTGRES_DB: ${POSTGRES_DB:-pino_yard_db}
+    ports:
+      # This computer only; nobody else on the network can reach the database.
+      - "127.0.0.1:${POSTGRES_PORT:-5434}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  api:
+    profiles: ["app"]
+    build: ./services/api
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-pino_yard_user}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-pino_yard_db}
+      ENVIRONMENT: production
+      # The reverse proxy's address, so rate limits see visitors' real addresses.
+      FORWARDED_ALLOW_IPS: ${FORWARDED_ALLOW_IPS:-127.0.0.1}
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - media_data:/app/media   # uploaded dish photos
+    ports:
+      - "127.0.0.1:8000:8000"
+    restart: unless-stopped
+
+  web:
+    profiles: ["app"]
+    build:
+      context: ./apps/web
+      args:
+        # The public https address of the API, e.g. https://api.example.com/api/v1
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-}
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-}
+    depends_on:
+      - api
+    ports:
+      - "127.0.0.1:3000:3000"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  media_data:
